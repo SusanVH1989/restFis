@@ -16,7 +16,7 @@ public class HelloRoute extends RouteBuilder {
 		.component("jetty")
 		.host("localhost")
 		.contextPath("/services")
-		.port("8083");
+		.port("8080");
 		
 		
 		rest("/v1/orders")
@@ -29,12 +29,7 @@ public class HelloRoute extends RouteBuilder {
 
 		
 		/*
-		 * from("file:C:\\Users\\hailssus\\Desktop\\Input\\Day1?noop=true")
-		 * .log("${body}") .process(new HelloProcessor()) .to("direct:myRoute2");
-		 * 
-		 * from("direct:myRoute2") .bean(mybean,"getData")
-		 * .to("file:C:\\Users\\hailssus\\Desktop\\Out\\Day1");
-		 */
+*/
 		
 	
 		
