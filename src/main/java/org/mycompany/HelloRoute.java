@@ -16,7 +16,7 @@ public class HelloRoute extends RouteBuilder {
 		.component("jetty")
 		
 		.contextPath("/services")
-		.port("8080");
+		;
 		
 		
 		rest("/v1/orders")
