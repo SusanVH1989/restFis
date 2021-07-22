@@ -22,7 +22,7 @@ public class HelloRoute extends RouteBuilder {
 		rest("/v1/orders")
 		.get().route().log("test").setBody(constant("{order:{id:1,price:100}}"));
 		
-			
+			//
 		
 		
 		
