@@ -14,7 +14,7 @@ public class HelloRoute extends RouteBuilder {
 	
 		restConfiguration()
 		.component("jetty")
-		.host("localhost")
+		
 		.contextPath("/services")
 		.port("8080");
 		
