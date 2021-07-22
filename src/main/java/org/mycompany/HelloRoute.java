@@ -11,25 +11,9 @@ public class HelloRoute extends RouteBuilder {
 	
 	@Override
 	public void configure() throws Exception {
-	
-		restConfiguration()
-		.component("jetty")
+	restConfiguration().component("servlet");
 		
-		.contextPath("/services")
-		;
-		
-		
-		rest("/v1/orders")
-		.get().route().log("test").setBody(constant("{order:{id:1,price:100}}"));
-		
-			//
-		
-		
-		
-
-		
-		/*
-*/
+		rest("/order").get().route().setBody(constant("{id:19}"));
 		
 	
 		
