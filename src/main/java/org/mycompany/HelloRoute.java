@@ -11,7 +11,11 @@ public class HelloRoute extends RouteBuilder {
 	
 	@Override
 	public void configure() throws Exception {
-	restConfiguration().component("servlet");
+		restConfiguration()
+		.component("jetty")
+
+		.contextPath("/services")
+		.port("8080");
 		
 		rest("/order").get().route().setBody(constant("{id:19}"));
 		
